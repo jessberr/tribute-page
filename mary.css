@@ -16,7 +16,6 @@ body{
 }
 
 header{
-   background-color: white;
    max-width: 100%;
    align-self: center;
    line-height: .7;
@@ -70,6 +69,7 @@ h2{
   border: .1 solid gray;
   border: 2px dashed white;
   padding-left: 15px;
+  margin-bottom: 10px;
 }
 
 #poems h3{
@@ -80,13 +80,15 @@ h2{
   max-width: 100%;
   display: block;
   height: auto;
-  margin: auto;
+  margin: 10px;
+  background-color: white;
+  border: 1px solid black;
+
 }
 
 .poem p{
   margin-bottom:13px;
   font-style: italic;
-
 }
 
 #tribute-link {
@@ -104,4 +106,30 @@ a{
 
 a:hover{
   text-decoration: underline;
+}
+
+@media(min-width: 500px){
+  .poem{
+    margin:0 auto;
+    float: left;
+    width: 300px;
+    margin-left: 60px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    padding: 5px;
+    background-color: white;
+  }
+  img{
+    height: 300px;
+    width: 500px;
+  }
+
+  #img-div{
+    height: 400px;
+    width: 500px;
+    margin:0 auto;
+  }
+  #tribute-link{
+    position: fixed;
+  }
 }
